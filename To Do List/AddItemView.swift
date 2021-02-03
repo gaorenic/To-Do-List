@@ -24,7 +24,10 @@ struct AddItemView: View {
                         Text(priority)
                     }
                 }
+                TextField("Discription", text: $description)
+                DatePicker("Due Date", selection: $dueDate, displayedComponents: .date)
             }
+            .navigationBarTitle("Add New To-Do Item")
         }
     }
 }
